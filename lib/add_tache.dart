@@ -46,10 +46,17 @@ class _NewTacheState extends State<NewTache> {
           ),
           ),
           //bouton enregistrer
-          /*Container(
-            child: ElevatedButton.icon(
-              onPressed: onPressed, icon: icon, label: label),
-          )*/
+          Row(
+            children: [
+              ElevatedButton.icon(
+                onPressed: ()=>{print("Enregistré !")}, icon: Icon(Icons.save), label: Text("Enregistrer")
+              ),
+              Padding(padding:EdgeInsets.all(30.0)),
+              ElevatedButton.icon(
+              onPressed: ()=>{print('Boutton annuler')}, icon: Icon(Icons.redo), label: Text("Annuler")
+            )
+          ],
+          ),
         ],
       ),
     );

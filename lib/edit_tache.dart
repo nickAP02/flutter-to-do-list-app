@@ -42,19 +42,19 @@ class _TacheEditState extends State<TacheEdit> {
            //boutons enregistrer et supprimer
            Row(
              children: [
-                ElevatedButton(
+                ElevatedButton.icon(
                   onPressed: ()=>{
                     print('Boutton enregistrer')
-                  },
-                  child: Icon(Icons.save)
-                ),
+                  }, 
+                  icon: Icon(Icons.save), label: Text("Enregistrer")
+                  ),
                 Padding(padding:EdgeInsets.all(30.0) ),
-                ElevatedButton(
+                ElevatedButton.icon(
                   onPressed: ()=>{
                     print('Boutton annuler')
-                  },
-                  child: Icon(Icons.redo)
-                ),
+                  }, 
+                  icon: Icon(Icons.redo), label: Text("Annuler")
+                  ),
              ],
            )
          ],
