@@ -1,10 +1,8 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_5/loginPage.dart';
 import 'package:shimmer/shimmer.dart';
 import 'dart:async';
-
 import 'main.dart';
 
 class SplashScreen extends StatefulWidget {

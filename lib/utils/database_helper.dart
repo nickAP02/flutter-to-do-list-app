@@ -2,7 +2,6 @@ import 'package:flutter_application_5/models/taches.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
 import 'dart:io';
-import 'dart:ffi';
 import 'package:path_provider/path_provider.dart';
 //cette classe permet d'effectuer les opérations sur la BD
 class DatabaseHelper{

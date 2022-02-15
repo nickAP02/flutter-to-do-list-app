@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_5/models/taches.dart';
-import 'package:flutter_application_5/utils/database_helper.dart';
  List<Taches> tachesList=[
     new Taches(1, 'Footing', 'Aller faire footing matinal', '6h15',Icons.run_circle),
     new Taches(2,'Boulot','Aller au boulot en voiture','8h',Icons.work),

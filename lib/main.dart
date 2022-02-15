@@ -5,7 +5,6 @@ import 'package:flutter_application_5/add_tache.dart';
 import 'package:flutter_application_5/edit_tache.dart';
 import 'package:flutter_application_5/liste_taches.dart';
 import 'package:flutter_application_5/splash_screen.dart';
-import 'loginPage.dart';
 import 'page1.dart';
 import 'page2.dart';
 Future<void> main() async {
@@ -33,15 +32,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Accueil',
-      theme:new ThemeData(
-       
+      theme:new ThemeData( 
         primarySwatch: Colors.blueGrey,
       ),
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: <String, WidgetBuilder>{
         '/First' :(BuildContext context) => new FisrtPage(title: 'Calories calc'),
-        /*'/Second' :(BuildContext context) => new MyPage(title: 'Music app'),*/
+        '/Second' :(BuildContext context) => new MyPage(title: 'Music app'),
 
       },
     );
@@ -60,7 +58,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
- final userEmail = FirebaseAuth.instance.currentUser!.email.toString();
+final userEmail = FirebaseAuth.instance.currentUser!.email.toString();
 final userName = FirebaseAuth.instance.currentUser!.displayName.toString();
 
   @override
@@ -76,8 +74,8 @@ final userName = FirebaseAuth.instance.currentUser!.displayName.toString();
           children: [
           new UserAccountsDrawerHeader(
 
-                accountName: new Text('User1'), 
-                accountEmail: new Text('firstuser@gmail.com'),
+                accountName: new Text(userName), 
+                accountEmail: new Text(userEmail),
                 currentAccountPicture: new CircleAvatar(backgroundImage: AssetImage("assets/\images/\profileImage.jpg"),
                ),
                  
